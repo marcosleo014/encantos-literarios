@@ -17,13 +17,15 @@
         position: absolute;
         inset: 0;
         border-radius: 8px;
-        transform: scale(0);
-        transition: transform 350ms;
+        opacity: 0;
+        transform: scaleX(0.4) scaleY(0.5);
+        transition: transform 350ms, opacity 450ms;
     }
 
     &:hover {
         &::after {
-            transform: scale(1);
+            transform: scaleX(1) scaleY(1);
+            opacity: 1;
         }
     }
 }
