@@ -1,0 +1,94 @@
+#benefits {
+    padding: 144px 32px 158px;
+    margin-bottom: 80px;
+    p {
+        font: var(--subtitle);
+        text-align: center;
+        color: rgb(186, 198, 201, 0.5);
+    }
+
+    strong {
+        position: relative;
+    }
+
+    &:hover {
+        .p1, .p3, .p5 {
+            color: var(--color-text-title);
+        }
+        .p2, .p4, .p6 {
+            color: var(--blue-mid);
+        }
+        .book {
+            transform: rotate(20deg) scale(1);
+        }
+        .ouija {
+            transform: rotate(100deg) scale(1);
+        }
+        .crystal-ball {
+            transform: rotate(-20deg) scale(1);
+        }
+    }
+}
+
+.book,
+.ouija,
+.crystal-ball {
+    position: absolute;
+    background-size: cover;
+}
+
+.book {
+    bottom: 60px;
+    right: -50px;
+    transform: rotate(20deg) scale(0);
+    width: 88px;
+    height: 88px;
+}
+
+.ouija {
+    left: -25px;
+    top: 60px;
+    transform: rotate(100deg) scale(0);
+    width: 80px;
+    height: 80px;
+}
+
+.crystal-ball {
+    top: 55px;
+    right: -60px;
+    transform: rotate(-20deg) scale(0);
+    width: 72px;
+    height: 72px;
+}
+
+.p1 {
+    transition: color 500ms linear;
+}
+.p2 {
+    transition: color 250ms 500ms linear;
+}
+.book {
+    transition: transform 250ms 750ms linear;
+}
+.p3 {
+    transition: color 500ms 1s linear;
+}
+.p4 {
+    transition: color 250ms 1.5s linear;
+}
+.ouija {
+    transition: transform 250ms 1.75s linear;
+}
+.p5 {
+    transition: color 500ms 2s linear;
+}
+.p6 {
+    transition: color 250ms 2.5s linear;
+}
+.crystal-ball {
+    transition: transform 250ms 2.75s linear;
+}
+
+.book:hover, .ouija:hover, .crystal-ball:hover {
+    animation: tremer 300ms forwards;
+}

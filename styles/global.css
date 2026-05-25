@@ -23,22 +23,28 @@
     --color-text-label: #BAC6C9;
 
     --font-family: "Raleway", sans-serif;
-    --title-lg: 700 48px/auto var(--font-family);
-    --title-md: 700 40px/auto var(--font-family);
-    --title-sm: 700 32px/auto var(--font-family);
-    --title-xs: 700 16px/auto var(--font-family);
+    --title-lg: 700 48px var(--font-family);
+    --title-md: 700 40px var(--font-family);
+    --title-sm: 700 32px var(--font-family);
+    --title-xs: 700 16px var(--font-family);
     --subtitle: 500 32px/200% var(--font-family);
     --body-lg: 500 20px/140% var(--font-family);
     --body-md: 500 16px/140% var(--font-family);
     --body-sm: 500 14px/140% var(--font-family);
     --body-xs: 500 12px/140% var(--font-family);
-    --button: 700 14px/auto var(--font-family);
-    --link: 500 14px/auto var(--font-family);
-    --tag: 700 10px/auto var(--font-family);
+    --button: 700 14px var(--font-family);
+    --link: 500 14px var(--font-family);
+    --tag: 700 10px var(--font-family);
 }
 
 body {
     background-color: var(--shape-bg);
     font: var(--body-md);
     color: var(--color-text-body);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

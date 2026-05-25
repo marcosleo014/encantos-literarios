@@ -1,0 +1,43 @@
+.button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font: var(--button);
+    color: var(--color-text-title);
+    position: relative;
+    
+    span {
+        position: relative;
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        border-radius: 8px;
+        transform: scale(0);
+        transition: transform 350ms;
+    }
+
+    &:hover {
+        &::after {
+            transform: scale(1);
+        }
+    }
+}
+
+.button.primary {
+    background-color: var(--pink-dark);
+    &::after {
+        background-color: var(--pink-base);
+    }
+}
+
+.button.secondary {
+    background-color: var(--blue-dark);
+    &::after {
+        background-color: var(--blue-mid);
+    }
+}
