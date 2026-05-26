@@ -48,3 +48,33 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.mobile-only {
+    display: none;
+}
+.desktop-only {
+    display: initial;
+}
+
+@media (width <= 1280px) {
+    :root {
+        --title-lg: 700 28px var(--font-family);
+        /* --title-md: 700 40px var(--font-family); */
+        --title-sm: 700 24px var(--font-family);
+        /* --title-xs: 700 16px var(--font-family); */
+        --subtitle: 500 16px/140% var(--font-family);
+        --body-lg: 500 14px/140% var(--font-family);
+        --body-md: 500 14px/140% var(--font-family);
+        /* --body-sm: 500 14px/140% var(--font-family); */
+        /* --body-xs: 500 12px/140% var(--font-family); */
+        /* --button: 700 14px var(--font-family); */
+        /* --link: 500 14px var(--font-family); */
+        /* --tag: 700 10px var(--font-family); */
+    }
+    .mobile-only {
+        display: initial;
+    }
+    .desktop-only {
+        display: none;
+    }
+}

@@ -47,6 +47,25 @@
     }
 }
 
+@media (width <= 1280px) {
+    .header-title {
+        gap: 48px;
+        padding-block: 20px 193px;
+        margin-bottom: 32px;
+
+        div {
+            gap: 16px;
+            h1, p {
+                width: 338px;
+            }
+        }
+
+        &>img {
+            height: 464px;
+        }
+    }
+}
+
 @keyframes aparecer {
     to {
         opacity: 1;

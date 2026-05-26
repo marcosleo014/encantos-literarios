@@ -1,6 +1,5 @@
 #benefits {
     padding: 144px 32px 158px;
-    margin-bottom: 80px;
     p {
         font: var(--subtitle);
         text-align: center;
@@ -89,6 +88,39 @@
     transition: transform 250ms 2.75s linear;
 }
 
-.book:hover, .ouija:hover, .crystal-ball:hover {
-    animation: tremer 300ms forwards;
+
+@media (width <= 1280px) {
+    #benefits {
+        padding: 80px 20px;
+
+        &:hover {
+            .ouija {
+                transform: rotate(-35deg) scale(1);
+            }
+            .crystal-ball {
+                transform: rotate(20deg) scale(1);
+            }
+        }
+    }
+    .book {
+        bottom: 30px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .ouija {
+        left: -260px;
+        top: 60px;
+        transform: rotate(-35deg) scale(0);
+        width: 32px;
+        height: 32px;
+    }
+
+    .crystal-ball {
+        top: 25px;
+        right: -45px;
+        transform: rotate(20deg) scale(0);
+        width: 40px;
+        height: 40px;
+    }
 }
