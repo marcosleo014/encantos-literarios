@@ -228,3 +228,52 @@
     transform: translateY(-20px);
     z-index: 5;
 }
+
+@media (width <= 1280px) {
+    #plans {
+        padding-block: 0;
+        .container-plans {
+            padding: 50px 0 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        gap: 0px;
+        .plano-semestral {
+            transform: translate(0, 0) scale(0.7);
+        }
+        .plano-mensal {
+            transform: translate(-20px, 20px) rotate(-8deg) scale(0.7);
+        }
+        .plano-anual {
+            transform: translate(20px, 20px) rotate(8deg) scale(0.7);
+        }
+        .container-plans:hover {
+            .plano-semestral {
+                transform: translate(0px, 0) scale(0.5);
+            }
+            .plano-mensal {
+                transform: translate(-70px, 40px) rotate(-10deg) scale(0.5);
+            }
+            .plano-anual {
+                transform: translate(100px, -40px) rotate(10deg) scale(0.5);
+            }
+        }
+        .container-plans:hover {
+            .plano-semestral:hover {
+                transform: translate(0px, 0) scale(0.8);
+            }
+            .plano-mensal:hover {
+                transform: translate(-80px, 0px) rotate(0deg) scale(0.8);
+            }
+            .plano-anual:hover {
+                transform: translate(80px, 0px) rotate(0deg) scale(0.8);
+            }
+        }
+    }
+    .card {
+        padding: 32px 28px;
+        width: 272px;
+        height: 400px;
+    }
+}
