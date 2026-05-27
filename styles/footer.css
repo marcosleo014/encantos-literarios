@@ -25,7 +25,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     &>img {
         width: 264px;
     }
@@ -145,4 +144,24 @@ footer {
         }
     }
 
+}
+
+@media (width <= 1280px) {
+    footer {
+        max-width: 375px;
+        padding: 98px 32px 38px;
+        flex-direction: column;
+        &>img {
+            max-width: 375px;
+        }
+    }
+}
+.footer-left {
+    align-items: center;
+    img {
+        width: 159px;
+    }
+    nav {
+        width: 100%;
+    }
 }
